@@ -12,7 +12,7 @@ class Product(models.Model):
 
 
 class FileUpload(models.Model):
-	filename = models.PositiveIntegerField()
+	filename = models.CharField(max_length=50)
 	date = models.DateField(auto_now_add=True)
 	file = models.FileField(upload_to='tmp/')
 

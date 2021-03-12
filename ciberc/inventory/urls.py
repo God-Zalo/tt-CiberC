@@ -1,7 +1,7 @@
 from django.urls import path
-from .views import InventoryList, FileUpload
+from .views import InventoryListView, FileUploadView
 
 urlpatterns = [
-	path ('', InventoryList.as_view()),
-	path ('fileupload/', FileUpload.as_view()),
+	path ('', InventoryListView.as_view()),
+	path ('fileupload/', FileUploadView.as_view()),
 ]

@@ -1,3 +1,7 @@
+CREATE USER IF NOT EXISTS 'ciberc'@'localhost' IDENTIFIED BY 'ciberc';
+
+GRANT ALL PRIVILEGES ON * . * TO 'ciberc'@'localhost';
+
 DROP TABLE IF EXISTS db_inventory;
 
 CREATE TABLE db_inventory (
